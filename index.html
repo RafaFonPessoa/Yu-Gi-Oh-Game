@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Reset css -->
-    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <!-- Framework -->
-    <link rel="stylesheet" href="/src/styles/containers_and_frames.css">
-    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
     <!-- Main style -->
-    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,21 @@
 <body>
     <div class="bg-video">
         <video class="video" autoplay loop muted>
-            <source src="/src/assets/video/yugi.mp4" type="video/mp4">
+            <source src="./src/assets/video/yugi.mp4" type="video/mp4">
         </video>
     </div>
 
     <div class="container">
         <div class="container__left">
             <div class="score_box"></div>
-            <div class="menu_avatar"></div>
-            <div class="card_details"></div>
+            <span id="score_points">Win : 0 | Lose: 0</span>
+            <div class="menu_avatar">
+                <img id="card-image">
+            </div>
+            <div class="card_details">
+                <p id="card-name"></p>
+                <p id="card-type"></p>
+            </div>
         </div>
         
         <div class="container__rigth">
