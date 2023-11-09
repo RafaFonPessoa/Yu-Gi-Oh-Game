@@ -42,6 +42,7 @@
 {
     width: 35%;
     min-width: 300px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -136,4 +137,14 @@
     width: 8rem;
     border: solid #fff;
     border-radius: 8px;
+}
+
+.card
+{
+    transition: transform 0.2s;
+}
+
+.card:hover
+{
+    transform: scale(1.2);
 }
