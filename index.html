@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./src/styles/buttons.css">
     <!-- Main style -->
     <link rel="stylesheet" href="src/styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +20,11 @@
     <title>Yu-Gii-Oh Jo-Ken-Po</title>
 </head>
 <body>
+
+    <audio id="bg-music" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
+
     <div class="bg-video">
         <video class="video" autoplay loop muted>
             <source src="./src/assets/video/yugi.mp4" type="video/mp4">
@@ -50,14 +58,14 @@
                             <img id="player-field-card" height="180px" width="125px">
                         </div>
                         
-                        <img height="100px" src="src/assets/icons/millenium.png">
+                        <img height="100px" src="src/assets/icons/millenium2.png">
                         
                         <div class="card-infield">
                             <img id="computer-field-card" height="180px" width="125px">
                         </div>
                     </div>
                     <div class="versus-bottom">
-                        <button id="nex-duel" class="rpgui-button"
+                        <button id="next-duel" class="rpgui-button"
                         onclick="resetDuel()">
                             GANHOU
                         </button>

@@ -1,3 +1,17 @@
+body
+{
+    cursor:url("../assets/cursor/yugicursor.png"), default;
+}
+
+button,
+a,
+button:hover,
+a:hover,
+img:hover
+{
+    cursor:url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
 .bg-video
 {
     position: absolute;
